@@ -24,7 +24,7 @@ public class ConsumingRestApplication {
     private static final Logger log = LoggerFactory.getLogger(ConsumingRestApplication.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumingRestApplication.class, args);
+        SpringApplication.run(ConsumingRestApplication.class, args).close();
     }
 
     @Bean
